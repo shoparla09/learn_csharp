@@ -6,25 +6,25 @@ using System.Threading.Tasks;
 
 namespace learn_csharp
 {
-    internal class naamEnLeeftijd
+    internal class Opdracht1
     {
-        static void Main2(string[] args)
+        public void Start()
         {
             Console.WriteLine("Wat is jouw naam?");
             string naam = Console.ReadLine();
             Console.WriteLine(" ");
-
             Console.WriteLine("Wat is jouw leeftijd?");
             string leeftijd = Console.ReadLine();
-
-            if (leeftijd.i)
+            int leeftijdInGetal;
+            bool isGetal = int.TryParse(leeftijd, out leeftijdInGetal);
+            if (isGetal)
             {
-
                 Console.WriteLine("Hoi " + naam + ", Jij bent " + leeftijd + " jaar oud!"); Console.ReadLine();
-                }
-                else { 
-                   Console.WriteLine("Hoi " + naam + ", Jij hebt geen geldige leeftijd opgegeven.");
-                }
+            }
+            else
+            {
+                Console.WriteLine("Hoi " + naam + ", Jij hebt geen geldige leeftijd opgegeven.");
             }
         }
-
+    }
+}
