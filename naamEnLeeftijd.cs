@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace learn_csharp.naamEnLeeftijd
+namespace learn_csharp
 {
     internal class naamEnLeeftijd
     {
@@ -17,14 +17,14 @@ namespace learn_csharp.naamEnLeeftijd
             Console.WriteLine("Wat is jouw leeftijd?");
             string leeftijd = Console.ReadLine();
 
-            //if (leeftijd.i)
-            //    {
+            if (leeftijd.i)
+            {
 
                 Console.WriteLine("Hoi " + naam + ". Jij bent " + leeftijd + " jaar oud!"); Console.ReadLine();
-            //}
-            //else { 
-            //    Console.WriteLine("Hoi " + naam + ". Jij hebt geen geldige leeftijd opgegeven.");
-            //}
         }
+                else { 
+                   Console.WriteLine("Hoi " + naam + ". Jij hebt geen geldige leeftijd opgegeven.");
+                }
     }
 }
+
